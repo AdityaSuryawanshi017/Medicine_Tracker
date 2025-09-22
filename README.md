@@ -1,4 +1,4 @@
-# Medicine_Tracker
+# Medicine_Remainder
 🏥 Medicine Reminder System with SMS Notifications
 
 📌 Project Description
