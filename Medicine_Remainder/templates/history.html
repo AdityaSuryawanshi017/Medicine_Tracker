@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>History - Medicine Reminder</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding:20px; background:#eef2f7; }
+    .card { background:white; padding:12px; margin:8px 0; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.06); }
+    a { text-decoration:none; color:#1976d2; }
+    .taken { color:#4caf50; font-weight:bold; }
+    .missed { color:#f44336; font-weight:bold; }
+    .pending { color:#ff9800; font-weight:bold; }
+  </style>
+</head>
+<body>
+  <h2>History (Today)</h2>
+  <p><a href="/">← Back to Dashboard</a> | <a href="/logout">Logout</a></p>
+
+  {% for med in meds %}
+  <div class="card">
+    <strong>{{ med['medicine_name'] }}</strong> — {{ med['dosage'] }}
+    <div>⏰ {{ med['time'] }}</div>
+    <div>Status:
+      {% if med['status'] == 'taken' %}
+        <span class="taken">✔ Taken</span>
+      {% elif med['status'] == 'missed' %}
+        <span class="missed">❌ Missed</span>
+      {% else %}
+        <span class="pending">⏳ Pending</span>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+
+  {% if meds|length == 0 %}
+    <p>No medicines recorded for today.</p>
+  {% endif %}
+</body>
+</html>

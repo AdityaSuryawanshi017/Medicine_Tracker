@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Register - Medicine Reminder</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 30px; background:#f6f8fb; }
+    .box { background:white; padding:20px; width:320px; margin:30px auto; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.08); }
+    input { width:100%; padding:10px; margin:8px 0; box-sizing:border-box; }
+    button { padding:10px 16px; width:100%; background:#1976d2; color:white; border:none; border-radius:6px; cursor:pointer; }
+    a { color:#1976d2; text-decoration:none; }
+    .msg { font-size:0.9em; color:#555; }
+  </style>
+  <style>
+    body{
+        background-image: url('https://everythingmedicalbilling.com/wp-content/uploads/2020/05/Resources-for-Medical-Providers.jpg');
+        height: 100rch;
+        background-size: cover;
+        background-position: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Create Account</h2>
+    <form method="POST" action="/register">
+      <input name="name" placeholder="Full name" required>
+      <input name="email" type="email" placeholder="Email" required>
+      <input name="mobile" placeholder="Mobile number" required>
+      <input name="password" type="password" placeholder="Password" required>
+      <button type="submit">Register & Login</button>
+    </form>
+    <p class="msg">Already have account? <a href="/login">Login</a></p>
+  </div>
+</body>
+</html>

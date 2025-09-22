@@ -1,0 +1,159 @@
+/* General */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.user-info {
+  font-size: 14px;
+}
+
+.logout-btn {
+  background: #e74c3c;
+  color: white;
+  padding: 6px 12px;
+  margin-left: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.logout-btn:hover {
+  background: #c0392b;
+}
+
+/* Main Layout */
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+/* Medicine Cards */
+.medicine-card {
+  background: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.medicine-card.missed {
+  border-left: 6px solid #e74c3c;
+}
+
+.med-details h3 {
+  margin: 0 0 5px;
+  color: #2c3e50;
+}
+
+.med-details p {
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+/* Status */
+.status {
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.status.pending {
+  background: #f39c12;
+  color: white;
+}
+
+.status.missed {
+  background: #e74c3c;
+  color: white;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  margin: 2px;
+  display: inline-block;
+}
+
+.btn.taken {
+  background: #27ae60;
+}
+
+.btn.taken:hover {
+  background: #1e8449;
+}
+
+.btn.missed {
+  background: #e74c3c;
+}
+
+.btn.missed:hover {
+  background: #c0392b;
+}
+
+.btn.add {
+  background: #3498db;
+  width: 100%;
+  text-align: center;
+}
+
+.btn.add:hover {
+  background: #2980b9;
+}
+
+/* Add Form */
+.add-form form {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.add-form input {
+  width: 95%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.empty {
+  text-align: center;
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
+.history-link {
+  text-align: center;
+  margin-top: 20px;
+}
